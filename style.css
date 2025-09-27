@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --btn: #0bf911;
+  --wt: #ffffff;
+  --blk: #000000;
+  --foot-bg: #232e39;
+  --p-bg: #efeff4;
+
+  --txt-gold: #5d4e37;
+  --txt-para: #6b7280;
+  --txt-dk: #1c1c1c;
+  --txt-lt: #606075;
+  --txt-con: #007bff;
+
+  --ft-hd: "Roboto Mono";
+  --ft-logo: "Dancing Script";
+  --ft-bd: "Poppins";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main {
+  overflow-x: hidden;
+}
+.header-section {
+  background: url("./assets/landingBg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+header {
+  border-bottom: 2px solid var(--p-bg);
+  background-color: var(--wt);
+}
+.topNavbar {
+  position: relative;
+  background: var(--wt);
+  height: 100%;
+  width: 100%;
+  padding: 0 2em;
+  line-height: 4em;
+}
+.logo {
+  text-decoration: none;
+  font-family: var(--ft-logo);
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--blk);
+  padding: 1em 0;
+}
+.nav-right {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  padding: 0.4em 1em;
+  font-family: var(--ft-bd);
+  font-size: 0.8em;
+  text-align: right;
+}
+.nav-right a {
+  text-decoration: none;
+  color: var(--blk);
+  margin-left: 1em;
+}
+.navbar {
+  background: var(--wt);
+  line-height: 3em;
+  height: 50px;
+  position: relative;
+}
+.navbar ul {
+  width: 100%;
+  text-align: center;
+}
+.nav-item {
+  margin-right: 2em;
+  text-decoration: none;
+  font-family: var(--ft-bd);
+  color: var(--blk);
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.nav-item:hover,
+.nav-right a:hover {
+  color: var(--btn);
+}
+.intro {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  text-align: center;
+  color: var(--wt);
+}
+.intro .wc {
+  margin-bottom: 5em;
+}
+.intro .wc h1 {
+  font-family: var(--ft-bd);
+  font-size: 4em;
+}
+.intro .wc h3 {
+  font-family: var(--ft-bd);
+  font-size: 2em;
+}
+.intro .ips {
+  text-align: center;
+  margin: 0 15em;
+  padding: 1em;
+  border-radius: 0.5em;
+  backdrop-filter: blur(10px);
+}
+.intro .ips input,
+select,
+.intro .ips .btn {
+  font-family: var(--ft-bd);
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 3em;
+  margin-left: 1em;
+}
+.btn {
+  background: var(--btn);
+  color: var(--wt);
+  text-decoration: none;
+}
+.room {
+  width: 100vw;
+  padding: 2em 5em;
+  text-align: center;
+  margin-top: 60px;
+  background: var(--p-bg);
+  position: relative;
+}
+.room h2 {
+  display: table-cell;
+  user-select: none;
+  font-family: var(--ft-hd);
+  font-size: 2em;
+}
+.room span {
+  display: table-cell;
+  text-align: right;
+  width: 30%;
+}
+
+.room span a {
+  position: absolute;
+  top: 0;
+  right: 5em;
+  line-height: 6em;
+  color: var(--blk);
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--ft-hd);
+  transition: all 0.4s ease;
+}
+
+.room span a:hover {
+  text-decoration: none;
+}
+.card {
+  background: var(--wt);
+  width: 400px;
+  height: 600px;
+  margin: 2em 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  display: inline-block;
+  text-align: justify;
+  font-family: var(--ft-bd);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card b {
+  display: block;
+  color: var(--txt-gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: var(--ft-hd);
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  margin: 20px 25px 15px 25px;
+}
+.card p {
+  color: var(--txt-para);
+  line-height: 1.7;
+  font-size: 0.9em;
+  margin: 0 25px 30px 25px;
+}
+.gallary {
+  width: 100vw;
+  text-align: center;
+  margin-top: 2em;
+  padding: 2em 5em;
+}
+.gallary h2 {
+  display: table-cell;
+  user-select: none;
+  font-family: var(--ft-hd);
+  font-size: 2em;
+}
+.img-Div {
+  margin: 2em 0;
+}
+.gallary .img-Div img {
+  overflow: hidden;
+  height: 230px;
+  border-radius: 0.5em;
+  margin-left: 0.2em;
+  margin-bottom: 0.2em;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.contact {
+  background: var(--p-bg);
+  padding: 2em 5em 0;
+  height: 50vh;
+  margin: 2em auto 0;
+  text-align: center;
+}
+.contact h2 {
+  font-family: var(--ft-hd);
+  color: var(--blk);
+  margin-bottom: 1.7em;
+}
+.contact .contact-container {
+  padding: 10px 0;
+}
+.contact .contact-container div {
+  display: inline-block;
+  width: 30%;
+  margin: 1em;
+  border: 1px solid #ddd;
+  padding: 15px 0;
+  border-radius: 0.5em;
+  background-color: var(--wt);
+  font-family: var(--ft-bd);
+}
+.contact .contact-container div p:first-child {
+  font-weight: 600;
+  color: var(--txt-para);
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+.contact .contact-container div p:last-child {
+  color: var(--txt-con);
+  font-size: 0.9em;
+  padding: 0 0.5em;
+}
+footer {
+  background-color: var(--foot-bg);
+  color: var(--wt);
+  padding: 2em 0 0.7em;
+  font-family: var(--ft-bd);
+  border-top: 5px solid var(--txt-con);
+  text-align: center;
+}
+footer .upper {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1em;
+  vertical-align: top;
+  text-align: left;
+}
+footer .upper:nth-child(2) {
+  text-align: center;
+}
+footer .upper:nth-child(3) {
+  text-align: right;
+}
+footer .upper p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+footer .upper p:hover {
+  color: var(--btn);
+}
+footer a {
+  color: var(--wt);
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--btn);
+}
+
+footer div:nth-child(3) a {
+  display: inline;
+  margin-left: 1em;
+  padding: 0;
+}
+footer section {
+  border-top: 1px solid var(--txt-lt);
+  padding-top: 1em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+footer section div {
+  display: inline-block;
+  margin-right: 20px;
+  color: #ccc;
+}
+
+footer section select {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  background-color: var(--txt-para);
+  color: var(--wt);
+  border: 1px solid var(--txt-lt);
+  cursor: pointer;
+}
