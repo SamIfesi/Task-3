@@ -21,8 +21,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-main {
   overflow-x: hidden;
 }
 .header-section {
@@ -98,7 +96,7 @@ header {
   color: var(--wt);
 }
 .intro .wc {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .intro .wc h1 {
   font-family: var(--ft-bd);
@@ -110,8 +108,8 @@ header {
 }
 .intro .ips {
   text-align: center;
-  margin: 0 15em;
-  padding: 1em;
+  margin: 0 8em;
+  padding: 0.7em;
   border-radius: 0.5em;
   backdrop-filter: blur(10px);
 }
@@ -167,7 +165,7 @@ select,
 }
 .card {
   background: var(--wt);
-  width: 400px;
+  width: 350px;
   height: 600px;
   margin: 2em 1em;
   border-radius: 1em;
@@ -266,7 +264,6 @@ footer {
   color: var(--wt);
   padding: 2em 0 0.7em;
   font-family: var(--ft-bd);
-  border-top: 5px solid var(--txt-con);
   text-align: center;
 }
 footer .upper {
@@ -307,9 +304,9 @@ footer div:nth-child(3) a {
   padding: 0;
 }
 footer section {
-  border-top: 1px solid var(--txt-lt);
+  border-top: 1px solid var(--p-bg);
   padding-top: 1em;
-  margin-top: 2em;
+  margin: 2em;
   text-align: center;
 }
 
